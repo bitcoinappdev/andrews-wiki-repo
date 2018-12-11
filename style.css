@@ -1,0 +1,17 @@
+#assetTypeRegister {
+  display: grid;
+  grid-template-columns: minmax(0, 100) auto 1fr auto auto;
+  background-color: black;
+  grid-gap: 1px;
+  border: solid 1px;
+  border-right: none;
+}
+
+#messageTypeRegister { 
+  display: grid;
+  grid-template-columns: minmax(0, 100) auto 1fr;
+  background-color: black;
+  grid-gap: 1px;
+  border: solid 1px;
+  border-right: none;
+}
