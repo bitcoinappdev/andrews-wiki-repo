@@ -49,10 +49,34 @@ fuction showAssetCreationTxns (jsonObj) {
 		const maxBytesExampleDiv = document.createElement('div');
 		const payloadOutputLabelDiv = document.createElement('div');
 		const lengthLabelDiv = document.createElement('div');
-		const payloudOutputExampleDiv = document.createElement('div');
+		const payloadOutputExampleDiv = document.createElement('div');
 		const lengthExampleDiv = document.createElement('div');
 		
-		//TODO: Add textContent for all of the above 12 divs.
+		assetOperationDiv.textContent = 'Asset Operation';
+		opReturnTitleDiv.textContent = 'OP_RETURN for Token Creation Txn (Asset Type: ${asset[i]})';
+		fieldDiv.textContent = 'Field';
+		opReturnLabelDiv.textContent = 'OP_RETURN Payload';
+		bytesLabelDiv.textContent = 'Bytes';
+		maxBytesLabelDiv.textContent = 'Max Bytes';
+		bytesExampleDiv.textContent = '145';
+		maxBytesExampleDiv.textContent = '153';
+		payloadOutputLabelDiv.textContent = 'Payload Output:';
+		lengthLabelDiv.textContent = 'Length:';
+		payloadOutputExampleDiv.textContent = //TODO: Concatenate;
+		lengthExampleDiv.textContent = '145';
+		
+		assetOperationDiv.className = 'asset-operation-div';
+		opReturnTitleDiv.className = 'op-return-title-div';
+		fieldDiv.className = 'field-div';
+		opReturnLabelDiv.className = 'op-return-label-div';
+		bytesLabelDiv.className = 'bytes-label-div';
+		maxBytesLabelDiv.className = 'max-bytes-label-div';
+		bytesExampleDiv.className = 'bytes-example-div';
+		maxBytesExampleDiv.className = 'max-bytes-example-div';
+		payloadOutputLabelDiv.className = 'payload-output-label-div';
+		lengthLabelDiv.className = 'length-label-div';
+		payloadOutputExampleDiv.className = 'payload-output-example-div';
+		lengthExampleDiv.className = 'length-example-div';
 		
 		const opReturn = document.createElement('div');
 		const assetCreationHeader = document.createElement('div');
