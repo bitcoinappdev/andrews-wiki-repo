@@ -17,7 +17,7 @@
 
 #assetTypeRegister {
   display: grid;
-  grid-template-columns: minmax(0, 100) auto 1fr auto auto;
+  grid-template-columns: minmax(0, 100px) auto 1fr auto auto;
   background-color: black;
   grid-gap: 1px;
   border: solid 1px;
@@ -31,7 +31,7 @@
 
 #messageTypeRegister { 
   display: grid;
-  grid-template-columns: minmax(0, 100) auto 1fr;
+  grid-template-columns: minmax(0, 100px) auto 1fr;
   background-color: black;
   grid-gap: 1px;
   border: solid 1px;
