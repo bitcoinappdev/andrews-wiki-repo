@@ -12,7 +12,19 @@ const spec = request.response;
 }
 
 fuction showRegister (jsonObj) {
-  const messages = jsonObj.messages;
+      const messages = jsonObj.messages;
+      const messageTypeHeader = document.createElement('p');
+      const codeHeader = document.createElement('p');
+      const commentsHeader = document.createElement('p');
+      
+      const messageTypeHeaderDiv = document.createElement('div');
+      const codeHeaderDiv = document.createElement('div');
+      const commentsHeaderDiv = document.createElement('div');
+      
+      messageTypeRegister.appendChild(messageTypeHeaderDiv);
+      messageTypeRegister.appendChild(codeHeaderDiv);
+      messageTypeRegister.appendChild(messageHeaderDiv);
+      
   for (let i = 0; i < messages.length; i++) {  
     const messageType = document.createElement('p');
     const code = document.createElement('p');
