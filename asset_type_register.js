@@ -30,6 +30,12 @@ fuction showAssetRegister (jsonObj) {
       categoryHeaderDiv.className = 'heading';
       legalClassificationHeaderDiv.className = 'heading';
 
+      assetTypeHeader.textContent = 'Asset Type';
+      codeHeader.textContent = 'Code Header';
+      descriptionHeader.textContent = 'Description';
+      categoryHeader.textContent = 'Category';
+      legalClassificationHeader.textContent = 'Legal Classification';
+      
       assetTypeRegister.appendChild(assetTypeHeaderDiv);
       assetTypeRegister.appendChild(codeHeaderDiv);
       assetTypeRegister.appendChild(descriptionHeaderDiv);
