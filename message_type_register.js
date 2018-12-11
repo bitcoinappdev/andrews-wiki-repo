@@ -24,6 +24,10 @@ fuction showRegister (jsonObj) {
       codeHeaderDiv.className = 'heading';
       commentsHeaderDiv.className = 'heading';
       
+      messageTypeHeader.textContent = 'Message Type';
+      codeHeader.textContent = 'Code';
+      commentsHeader.textContent = 'Comments';
+      
       messageTypeRegister.appendChild(messageTypeHeaderDiv);
       messageTypeRegister.appendChild(codeHeaderDiv);
       messageTypeRegister.appendChild(commentsHeaderDiv);
