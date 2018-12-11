@@ -13,15 +13,16 @@ request.onload = function () {
 }
 
 fuction showAssetCreationTxns (jsonObj) {
+	const assets = jsonObj.assets;
+	
 	for (let i = 0; i < assets.length; i++) {
-		
-		const assets = jsonObj.assets;
 		const opReturn = document.createElement('div');
+		const opReturnHeader = document.createElement('div');
 		const subfieldHeader = document.createElement('p');
 		const maxBytesHeader = document.createElement('p');
 		const hexValueHeader = document.createElement('p');
 		const commentsHeader = document.createElement('p');
-		const dataTypesHeader = document.createElement('p');
+		const dataTypeHeader = document.createElement('p');
 		const subfieldHeaderDiv = document.createElement('div');
 		const maxBytesHeaderDiv = document.createElement('div');
 		const hexValueHeaderDiv = document.createElement('div');
@@ -45,6 +46,8 @@ fuction showAssetCreationTxns (jsonObj) {
 		opReturn.appendChild(hexValueHeaderDiv);
 		opReturn.appendChild(commentsHeaderDiv);
 		opReturn.appendChild(dataTypeHeaderDiv);
+		
+		opReturn.appendChild(opReturnHeader);
 
 		for (let j = 0; j < assets[i].fields.length) {
 			const subfield = document.createElement('p');
@@ -55,7 +58,7 @@ fuction showAssetCreationTxns (jsonObj) {
 			const subfieldDiv = document.createElement('div');
 			const maxBytesDiv = document.createElement('div');
 			const hexValueDiv = document.createElement('div');
-			const commmentsDiv = document.createElement('div');
+			const commentsDiv = document.createElement('div');
 			const dataTypeDiv = document.createElement('div');
 
 			subfield.textContent = assets[i].assetType;
