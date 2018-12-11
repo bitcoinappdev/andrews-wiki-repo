@@ -20,7 +20,6 @@ fuction showAssetRegister (jsonObj) {
       const descriptionHeader = document.createElement('p');
       const categoryHeader = document.createElement('p');
       const legalClassificationHeader = document.createElement('p');
-      
       const assetTypeHeaderDiv = document.createElement('div');
       const codeHeaderDiv = document.createElement('div');
       const descriptionHeaderDiv = document.createElement('div');
