@@ -7,7 +7,7 @@ request.responseType = 'json';
 request.send();
       
 request.onload = function () {
-const spec = request.response;
+      const spec = request.response;
       showRegister(spec);
 }
 
