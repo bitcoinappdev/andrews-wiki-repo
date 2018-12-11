@@ -15,8 +15,7 @@ fuction showRegister (jsonObj) {
       const messages = jsonObj.messages;
       const messageTypeHeader = document.createElement('p');
       const codeHeader = document.createElement('p');
-      const commentsHeader = document.createElement('p');
-      
+      const commentsHeader = document.createElement('p');    
       const messageTypeHeaderDiv = document.createElement('div');
       const codeHeaderDiv = document.createElement('div');
       const commentsHeaderDiv = document.createElement('div');
