@@ -1,25 +1,3 @@
-#assetTypeRegister {
-  display: grid;
-  grid-template-columns: minmax(0, 100) auto 1fr auto auto;
-  background-color: black;
-  grid-gap: 1px;
-  border: solid 1px;
-  border-right: none;
-}
-
-#messageTypeRegister { 
-  display: grid;
-  grid-template-columns: minmax(0, 100) auto 1fr;
-  background-color: black;
-  grid-gap: 1px;
-  border: solid 1px;
-  border-right: none;
-}
-
-.heading {
-  font-weight: bold; 
-}
-
 #actions-table { 
  max-width:100%;
  display:grid; 
@@ -36,3 +14,36 @@
   padding: 10px;
   background-color:white;
 }
+
+#assetTypeRegister {
+  display: grid;
+  grid-template-columns: minmax(0, 100) auto 1fr auto auto;
+  background-color: black;
+  grid-gap: 1px;
+  border: solid 1px;
+  border-right: none;
+}
+
+#assetTypeRegister > * {
+  padding: 10px;
+  background-color:white;
+}
+
+#messageTypeRegister { 
+  display: grid;
+  grid-template-columns: minmax(0, 100) auto 1fr;
+  background-color: black;
+  grid-gap: 1px;
+  border: solid 1px;
+  border-right: none;
+}
+
+#messageTypeRegister > * {
+  padding: 10px;
+  background-color:white;
+}
+
+.heading {
+  font-weight: bold; 
+}
+
