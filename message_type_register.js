@@ -20,6 +20,10 @@ fuction showRegister (jsonObj) {
       const codeHeaderDiv = document.createElement('div');
       const commentsHeaderDiv = document.createElement('div');
       
+      messageTypeHeaderDiv.className = 'heading';
+      codeHeaderDiv.className = 'heading';
+      commentsHeaderDiv.className = 'heading';
+      
       messageTypeRegister.appendChild(messageTypeHeaderDiv);
       messageTypeRegister.appendChild(codeHeaderDiv);
       messageTypeRegister.appendChild(commentsHeaderDiv);
