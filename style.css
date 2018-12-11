@@ -47,7 +47,7 @@
   background-color:white;
 }
 
-.asset-creation-txn-op_return {
+.asset-creation-txn {
   display: grid;
   grid-template-columns: minmax(0, 70px) minmax(0, 70px) minmax(0, 100px) auto 1fl minmax(0, 70px) 1fl auto;
   background-color: black;
