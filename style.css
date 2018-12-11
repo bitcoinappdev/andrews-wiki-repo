@@ -7,6 +7,8 @@
   border-right: none;
 }
 
+#assetType
+
 #messageTypeRegister { 
   display: grid;
   grid-template-columns: minmax(0, 100) auto 1fr;
@@ -15,3 +17,9 @@
   border: solid 1px;
   border-right: none;
 }
+
+.heading {
+  font-weight: bold; 
+}
+
+
