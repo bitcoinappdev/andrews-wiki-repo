@@ -7,8 +7,6 @@
   border-right: none;
 }
 
-#assetType
-
 #messageTypeRegister { 
   display: grid;
   grid-template-columns: minmax(0, 100) auto 1fr;
