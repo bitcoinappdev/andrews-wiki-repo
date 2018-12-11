@@ -2,7 +2,7 @@
   font-weight: bold; 
 }
 
-#actions-table { 
+#actionsTable { 
  max-width:100%;
  display:grid; 
  grid-template-rows: repeat(29, auto); 
