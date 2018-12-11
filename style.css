@@ -2,7 +2,7 @@
   font-weight: bold; 
 }
 
-#actionsTable { 
+#actions-table { 
  max-width:100%;
  display:grid; 
  grid-template-rows: repeat(29, auto); 
@@ -14,12 +14,12 @@
  border-top:none;
 }
 
-#actionsTable > * {
+#actions-table > * {
   padding: 10px;
   background-color:white;
 }
 
-#assetTypeRegister {
+#asset-type-register {
   display: grid;
   grid-template-columns: minmax(0, 100px) auto 1fr auto auto;
   background-color: black;
@@ -28,12 +28,12 @@
   border-right: none;
 }
 
-#assetTypeRegister > * {
+#asset-type-register > * {
   padding: 10px;
   background-color:white;
 }
 
-#messageTypeRegister { 
+#message-type-register { 
   display: grid;
   grid-template-columns: minmax(0, 100px) auto 1fr;
   background-color: black;
@@ -42,12 +42,12 @@
   border-right: none;
 }
 
-#messageTypeRegister > * {
+#message-type-register > * {
   padding: 10px;
   background-color:white;
 }
 
-.assetCreationTxnOP_RETURN {
+.asset-creation-txn-op_return {
   display: grid;
   grid-template-columns: minmax(0, 70px) minmax(0, 70px) minmax(0, 100px) auto 1fl minmax(0, 70px) 1fl auto;
   background-color: black;
