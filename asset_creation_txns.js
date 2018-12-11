@@ -47,40 +47,34 @@ fuction showAssetCreationTxns (jsonObj) {
 		opReturn.appendChild(dataTypeHeaderDiv);
 
 		for (let j = 0; j < assets[i].fields.length) {
-		
-		
+			const subfield = document.createElement('p');
+			const maxBytes = document.createElement('p');
+			const hexValue = document.createElement('p');
+			const comments = document.createElement('p');
+			const dataType = document.createElement('p');
+			const subfieldDiv = document.createElement('div');
+			const maxBytesDiv = document.createElement('div');
+			const hexValueDiv = document.createElement('div');
+			const commmentsDiv = document.createElement('div');
+			const dataTypeDiv = document.createElement('div');
+
+			subfield.textContent = assets[i].assetType;
+			maxBytes.textContent = assets[i].code;
+			hexValue.textContent = assets[i].description;
+			comments.textContent = assets[i].category;
+			dataType.textContent = assets[i].legalClassification;
+
+			subfieldDiv.appendChild(subfield);
+			maxBytesDiv.appendChild(maxBytes);
+			hexValueDiv.appendChild(hexValue);
+			commentsDiv.appendChild(comments);
+			dataTypeDiv.appendChild(dataType);
+
+			op_return.appendChild(subfieldDiv);
+			op_return.appendChild(maxBytesDiv);
+			op_return.appendChild(hexValueDiv);
+			op_return.appendChild(commentsDiv);
+			op_return.appendChild(dataTypeDiv);
 		}
 	}
-      
-
-      for (let i = 0; i < assets.length; i++) {  
-          const assetType = document.createElement('p');
-          const code = document.createElement('p');
-          const description = document.createElement('p');
-          const category = document.createElement('p');
-          const legalClassification = document.createElement('p');
-          const assetTypeDiv = document.createElement('div');
-          const codeDiv = document.createElement('div');
-          const descriptionDiv = document.createElement('div');
-          const categoryDiv = document.createElement('div');
-          const legalClassificationDiv = document.createElement('div');
-
-          assetType.textContent = assets[i].assetType;
-          code.textContent = assets[i].code;
-          description.textContent = assets[i].description;
-          category.textContent = assets[i].category;
-          legalClassification.textContent = assets[i].legalClassification;
-            
-          assetTypeDiv.appendChild(assetType);
-          codeDiv.appendChild(code);
-          descriptionDiv.appendChild(description);
-          categoryDiv.appendChild(category);
-          legalClassificationDiv.appendChild(legalClassification);
-
-          assetTypeRegister.appendChild(assetTypeDiv);
-          assetTypeRegister.appendChild(codeDiv);
-          assetTypeRegister.appendChild(descriptionDiv);
-          assetTypeRegister.appendChild(categoryDiv);
-          assetTypeRegister.appendChild(legalClassificationDiv);
-      }
 }
