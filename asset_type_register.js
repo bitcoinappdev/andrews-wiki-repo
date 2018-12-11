@@ -8,13 +8,11 @@ request.send();
       
 request.onload = function () {
       const spec = request.response;
-      
       showAssetRegister(spec);
 }
 
 fuction showAssetRegister (jsonObj) {
       const assets = jsonObj.assets;
-      
       const assetTypeHeader = document.createElement('p');
       const codeHeader = document.createElement('p');
       const descriptionHeader = document.createElement('p');
@@ -55,7 +53,7 @@ fuction showAssetRegister (jsonObj) {
           description.textContent = assets[i].description;
           category.textContent = assets[i].category;
           legalClassification.textContent = assets[i].legalClassification;
-
+            
           assetTypeDiv.appendChild(assetType);
           codeDiv.appendChild(code);
           descriptionDiv.appendChild(description);
