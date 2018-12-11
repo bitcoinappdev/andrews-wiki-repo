@@ -25,8 +25,38 @@ fuction showAssetCreationTxns (jsonObj) {
 	}
 	
 	for (let i = 0; i < assets.length; i++) {
+		const assetCreationTable = document.createElement('div');						  
+		
+		const assetOperation = document.createElement('p');
+		const opReturnTitle = document.createElement('p');
+		const field = document.createElement('p');
+		const opReturnLabel = document.createElement('p');
+		const bytesLabel = document.createElement('p');
+		const maxBytesLabel = document.createElement('p');
+		const bytesExample = document.createElement('p');
+		const maxBytesExample = document.createElement('p');
+		const payloadOutputLabel = document.createElement('p');
+		const lengthLabel = document.createElement('p');
+		const payloudOutputExample = document.createElement('p');
+		const lengthExample = document.createElement('p');
+		const assetOperationDiv = document.createElement('div');
+		const opReturnTitleDiv = document.createElement('div');
+		const fieldDiv = document.createElement('div');
+		const opReturnLabelDiv = document.createElement('div');
+		const bytesLabelDiv = document.createElement('div');
+		const maxBytesLabelDiv = document.createElement('div');
+		const bytesExampleDiv = document.createElement('div');
+		const maxBytesExampleDiv = document.createElement('div');
+		const payloadOutputLabelDiv = document.createElement('div');
+		const lengthLabelDiv = document.createElement('div');
+		const payloudOutputExampleDiv = document.createElement('div');
+		const lengthExampleDiv = document.createElement('div');
+		
+		//TODO: Add textContent for all of the above 12 divs.
+		
 		const opReturn = document.createElement('div');
-		const opReturnHeader = document.createElement('div');
+		const assetCreationHeader = document.createElement('div');
+		
 		const subfieldHeader = document.createElement('p');
 		const maxBytesHeader = document.createElement('p');
 		const hexValueHeader = document.createElement('p');
@@ -39,7 +69,7 @@ fuction showAssetCreationTxns (jsonObj) {
 		const asciiHeaderDiv = document.createElement('div');
 		const commentsHeaderDiv = document.createElement('div');
 		const dataTypeHeaderDiv = document.createElement('div');
-
+		
 		subfieldHeaderDiv.className = 'heading';
 		maxBytesHeaderDiv.className = 'heading';
 		hexValueHeaderDiv.className = 'heading';
@@ -60,7 +90,7 @@ fuction showAssetCreationTxns (jsonObj) {
 		opReturn.appendChild(commentsHeaderDiv);
 		opReturn.appendChild(dataTypeHeaderDiv);
 		
-		opReturn.appendChild(opReturnHeader);
+		opReturn.appendChild(assetCreationHeader);
 
 		for (let j = 0; j < assets[i].fields.length) {
 			const subfield = document.createElement('p');
@@ -90,12 +120,25 @@ fuction showAssetCreationTxns (jsonObj) {
 			commentsDiv.appendChild(comments);
 			dataTypeDiv.appendChild(dataType);
 
-			op_return.appendChild(subfieldDiv);
-			op_return.appendChild(maxBytesDiv);
-			op_return.appendChild(hexValueDiv);
-			op_return.appendChild(asciiDiv);
-			op_return.appendChild(commentsDiv);
-			op_return.appendChild(dataTypeDiv);
+			opReturn.appendChild(subfieldDiv);
+			opReturn.appendChild(maxBytesDiv);
+			opReturn.appendChild(hexValueDiv);
+			opReturn.appendChild(asciiDiv);
+			opReturn.appendChild(commentsDiv);
+			opReturn.appendChild(dataTypeDiv);
 		}
+		assetCreationTable.appendChild(assetOperationDiv);
+		assetCreationTable.appendChild(opReturnTitleDiv);
+		assetCreationTable.appendChild(fieldDiv);
+		assetCreationTable.appendChild(opReturnLabel);
+		assetCreationTable.appendChild(opReturn);
+		assetCreationTable.appendChild(bytesLabelDiv);
+		assetCreationTable.appendChild(maxBytesLabelDiv);
+		assetCreationTable.appendChild(bytesExampleDiv);
+		assetCreationTable.appendChild(maxBytesExampleDiv);
+		assetCreationTable.appendChild(payloadOutputLabelDiv);
+		assetCreationTable.appendChild(lengthLabelDiv);
+		assetCreationTable.appendChild(payloudOutputExampleDiv);
+		assetCreationTable.appendChild(lengthExampleDiv);
 	}
 }
