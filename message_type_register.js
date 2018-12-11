@@ -8,7 +8,7 @@ request.send();
       
 request.onload = function () {
 const spec = request.response;
-        showRegister(spec);
+      showRegister(spec);
 }
 
 fuction showRegister (jsonObj) {
