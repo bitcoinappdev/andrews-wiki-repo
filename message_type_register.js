@@ -23,26 +23,26 @@ fuction showRegister (jsonObj) {
       
       messageTypeRegister.appendChild(messageTypeHeaderDiv);
       messageTypeRegister.appendChild(codeHeaderDiv);
-      messageTypeRegister.appendChild(messageHeaderDiv);
+      messageTypeRegister.appendChild(commentsHeaderDiv);
       
-  for (let i = 0; i < messages.length; i++) {  
-    const messageType = document.createElement('p');
-    const code = document.createElement('p');
-    const comments = document.createElement('p');
-    const messageTypeDiv = document.createElement('div');
-    const codeDiv = document.createElement('div');
-    const commentsDiv = document.createElement('div');
+      for (let i = 0; i < messages.length; i++) {  
+          const messageType = document.createElement('p');
+          const code = document.createElement('p');
+          const comments = document.createElement('p');
+          const messageTypeDiv = document.createElement('div');
+          const codeDiv = document.createElement('div');
+          const commentsDiv = document.createElement('div');
 
-    messageType.textContent = messages[i].messageType;
-    code.textContent = messages[i].code;
-    comments.textContent = messages[i].comments;
+          messageType.textContent = messages[i].messageType;
+          code.textContent = messages[i].code;
+          comments.textContent = messages[i].comments;
 
-    messageTypeDiv.appendChild(messageType);
-    codeDiv.appendChild(code);
-    commentsDiv.appendChild(comments);
+          messageTypeDiv.appendChild(messageType);
+          codeDiv.appendChild(code);
+          commentsDiv.appendChild(comments);
 
-    messageTypeRegister.appendChild(messageTypeDiv);
-    messageTypeRegister.appendChild(codeDiv);
-    messageTypeRegister.appendChild(commentsDiv); 
-  }
+          messageTypeRegister.appendChild(messageTypeDiv);
+          messageTypeRegister.appendChild(codeDiv);
+          messageTypeRegister.appendChild(commentsDiv); 
+      }
 }
