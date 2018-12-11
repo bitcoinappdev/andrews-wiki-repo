@@ -25,6 +25,12 @@ fuction showAssetRegister (jsonObj) {
       const descriptionHeaderDiv = document.createElement('div');
       const categoryHeaderDiv = document.createElement('div');
       const legalClassificationHeaderDiv = document.createElement('div');
+      
+      assetTypeHeaderDiv.className = 'heading';
+      codeHeaderDiv.className = 'heading';
+      descriptionHeaderDiv.className = 'heading';
+      categoryHeaderDiv.className = 'heading';
+      legalClassificationHeaderDiv.className = 'heading';
 
       assetTypeRegister.appendChild(assetTypeHeaderDiv);
       assetTypeRegister.appendChild(codeHeaderDiv);
