@@ -1,3 +1,7 @@
+.heading {
+  font-weight: bold; 
+}
+
 #actions-table { 
  max-width:100%;
  display:grid; 
@@ -10,7 +14,7 @@
  border-top:none;
 }
 
-#actions-table > * {
+#actionsTable > * {
   padding: 10px;
   background-color:white;
 }
@@ -43,7 +47,10 @@
   background-color:white;
 }
 
-.heading {
-  font-weight: bold; 
-}
+.asset-creati
+
+
+
+
+
 
