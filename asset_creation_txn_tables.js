@@ -25,7 +25,6 @@ fuction showAssetCreationTxns (jsonObj) {
 	
 	for (let i = 0; i < assets.length; i++) {
 		const assetCreationTable = document.createElement('div');						  
-		
 		const assetOperation = document.createElement('p');
 		const opReturnTitle = document.createElement('p');
 		const field = document.createElement('p');
@@ -75,6 +74,7 @@ fuction showAssetCreationTxns (jsonObj) {
 		lengthLabelDiv.appendChild('lengthLabel');
 		lengthExampleDiv.appendChild('lengthExample');
 		
+		assetCreationTable.className = 'asset-creation-table';
 		assetOperationDiv.className = 'asset-operation-div';
 		opReturnTitleDiv.className = 'op-return-title-div';
 		fieldDiv.className = 'field-div';
