@@ -111,6 +111,7 @@ fuction showAssetCreationTxns (jsonObj) {
 		hexValueHeaderDiv.className = 'heading';
 		commentsHeaderDiv.className = 'heading';
 		dataTypeHeaderDiv.className = 'heading';
+		assetCreationHeaderDiv.className = 'asset-creation-header-div';
 
 		assetCreationHeader.textContent = 'Asset Creation Header (See Asset Definition, Asset Creation and Asset Amendment Actions)';
 		subfieldHeader.textContent = 'Subfield';
