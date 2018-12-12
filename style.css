@@ -47,7 +47,11 @@
   background-color:white;
 }
 
-.asset-creation-txn {
+#asset-creation-table-container {
+
+}
+
+.asset-creation-table {
   display: grid;
   grid-template-columns: minmax(0, 70px) minmax(0, 70px) minmax(0, 100px) auto 1fl minmax(0, 70px) 1fl auto;
   background-color: black;
@@ -56,7 +60,8 @@
   border-right: none;
 }
 
-asset-creation-table {
+.asset-creation-op-return {
+  display: grid;
 }
 
 asset-operation-div  {
