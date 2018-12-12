@@ -75,9 +75,9 @@ fuction showAssetCreationTxns (jsonObj) {
 		lengthExampleDiv.appendChild('lengthExample');
 		
 		assetCreationTable.className = 'asset-creation-table';
-		assetOperationDiv.className = 'asset-operation-div';
-		opReturnTitleDiv.className = 'op-return-title-div';
-		fieldDiv.className = 'field-div';
+		assetOperationDiv.className = 'asset-operation-div heading';
+		opReturnTitleDiv.className = 'op-return-title-div heading';
+		fieldDiv.className = 'field-div heading';
 		opReturnLabelDiv.className = 'op-return-label-div';
 		bytesLabelDiv.className = 'bytes-label-div';
 		maxBytesLabelDiv.className = 'max-bytes-label-div';
@@ -112,8 +112,6 @@ fuction showAssetCreationTxns (jsonObj) {
 		hexValueHeaderDiv.className = 'heading';
 		commentsHeaderDiv.className = 'heading';
 		dataTypeHeaderDiv.className = 'heading';
-		fieldDiv.className += 'heading';
-		opReturnTitleDiv.className += 'heading';
 		
 		assetCreationHeader.textContent = 'Asset Creation Header (See Asset Definition, Asset Creation and Asset Amendment Actions)';
 		subfieldHeader.textContent = 'Subfield';
