@@ -55,7 +55,7 @@ fuction showActionFieldTables (jsonObj) {
 		actionFieldTable.className = 'action-field-table';
 		protocolActionDiv.className = 'protocol-action-div heading';
 		actionFieldsTitleDiv.className = 'action-fields-title-div heading';
-		fieldDiv.className = 'field-div heading';
+		fieldDiv.className = 'action-field-div heading';
 		actionFieldsLabelDiv.className = 'action-fields-label-div';
 		maxBytesLabelDiv.className = 'max-bytes-label-div';
 		maxBytesExampleDiv.className = 'max-bytes-example-div';
