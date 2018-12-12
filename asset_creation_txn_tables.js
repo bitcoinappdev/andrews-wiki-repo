@@ -1,5 +1,4 @@
 const assetCreationTxnContainer = document.querySelector('#asset-creation-txn-container');
-const assetCreationTxn = document.querySelector('.asset-creation-txn');
 const requestURL = 'TODO:GETFILE.json';
 const request = new XMLHttpRequest();
       
