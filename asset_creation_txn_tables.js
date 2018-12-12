@@ -7,7 +7,7 @@ request.send();
       
 request.onload = function () {
   	const spec = request.response;
-  	showAssetRegister(spec);
+  	showAssetCreationTxns(spec);
 }
 
 fuction showAssetCreationTxns (jsonObj) {
