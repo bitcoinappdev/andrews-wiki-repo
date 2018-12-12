@@ -194,6 +194,5 @@ fuction showAssetCreationTxns (jsonObj) {
 		assetCreationTable.appendChild(payloadOutputExampleDiv);
 		assetCreationTable.appendChild(lengthExampleDiv);
 		assetCreationTableContainer.appendChild(assetCreationTable);
-	}
-	
+	}	
 }
