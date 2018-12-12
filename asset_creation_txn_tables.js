@@ -106,15 +106,15 @@ fuction showAssetCreationTxns (jsonObj) {
 		const dataTypeHeaderDiv = document.createElement('div');
 		
 		opReturn.className = 'asset-creation-op-return';
+		assetCreationHeaderDiv.className = 'asset-creation-header-div';
 		subfieldHeaderDiv.className = 'heading';
 		maxBytesHeaderDiv.className = 'heading';
 		hexValueHeaderDiv.className = 'heading';
 		commentsHeaderDiv.className = 'heading';
 		dataTypeHeaderDiv.className = 'heading';
-		assetCreationHeaderDiv.className = 'asset-creation-header-div';
-		fieldDiv.className = 'heading';
-		opReturnTitle.className = 'op-return-title-div';
-
+		fieldDiv.className += 'heading';
+		opReturnTitleDiv.className += 'heading';
+		
 		assetCreationHeader.textContent = 'Asset Creation Header (See Asset Definition, Asset Creation and Asset Amendment Actions)';
 		subfieldHeader.textContent = 'Subfield';
 		maxBytesHeader.textContent = 'Max Bytes';
