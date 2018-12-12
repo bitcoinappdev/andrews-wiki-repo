@@ -89,14 +89,15 @@ fuction showAssetCreationTxns (jsonObj) {
 		lengthExampleDiv.className = 'length-example-div';
 		
 		const opReturn = document.createElement('div');
-		const assetCreationHeader = document.createElement('div');
 		
+		const assetCreationHeader = document.createElement('p');
 		const subfieldHeader = document.createElement('p');
 		const maxBytesHeader = document.createElement('p');
 		const hexValueHeader = document.createElement('p');
 		const asciiHeader = document.createElement('p');
 		const commentsHeader = document.createElement('p');
 		const dataTypeHeader = document.createElement('p');
+		const assetCreationHeaderDiv = document.createElement('div');
 		const subfieldHeaderDiv = document.createElement('div');
 		const maxBytesHeaderDiv = document.createElement('div');
 		const hexValueHeaderDiv = document.createElement('div');
@@ -104,12 +105,14 @@ fuction showAssetCreationTxns (jsonObj) {
 		const commentsHeaderDiv = document.createElement('div');
 		const dataTypeHeaderDiv = document.createElement('div');
 		
+		opReturn.className = 'asset-creation-op-return';
 		subfieldHeaderDiv.className = 'heading';
 		maxBytesHeaderDiv.className = 'heading';
 		hexValueHeaderDiv.className = 'heading';
 		commentsHeaderDiv.className = 'heading';
 		dataTypeHeaderDiv.className = 'heading';
 
+		assetCreationHeader.textContent = 'Asset Creation Header (See Asset Definition, Asset Creation and Asset Amendment Actions)';
 		subfieldHeader.textContent = 'Subfield';
 		maxBytesHeader.textContent = 'Max Bytes';
 		hexValueHeader.textContent = 'Hex Value (Example Values)';
