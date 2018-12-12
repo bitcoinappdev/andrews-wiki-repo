@@ -72,7 +72,6 @@ fuction showActionFieldTables (jsonObj) {
 		const fieldMaxBytesHeaderDiv = document.createElement('div');
 		
 		actionFields.className = 'action-fields';
-		
 		fieldHeaderDiv.className = 'heading';
 		fieldDescriptionHeaderDiv.className = 'heading';
 		fieldDataTypeHeaderDiv.className = 'heading';
