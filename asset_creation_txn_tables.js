@@ -1,4 +1,3 @@
-const assetCreationTxnContainer = document.querySelector('#asset-creation-txn-container');
 const requestURL = 'TODO:GETFILE.json';
 const request = new XMLHttpRequest();
       
@@ -12,6 +11,7 @@ request.onload = function () {
 }
 
 fuction showAssetCreationTxns (jsonObj) {
+	const assetCreationTableContainer = document.querySelector('#asset-creation-table-container');
 	const assets = jsonObj.assets;
 	
 	function ascii_to_hex(str) {
@@ -189,6 +189,7 @@ fuction showAssetCreationTxns (jsonObj) {
 		assetCreationTable.appendChild(lengthLabelDiv);
 		assetCreationTable.appendChild(payloadOutputExampleDiv);
 		assetCreationTable.appendChild(lengthExampleDiv);
+		assetCreationTableContainer.appendChild(assetCreationTable);
 	}
 	
 }
