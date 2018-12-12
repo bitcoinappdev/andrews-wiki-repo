@@ -37,7 +37,7 @@ fuction showAssetCreationTxns (jsonObj) {
 		const maxBytesExample = document.createElement('p');
 		const payloadOutputLabel = document.createElement('p');
 		const lengthLabel = document.createElement('p');
-		const payloudOutputExample = document.createElement('p');
+		const payloadOutputExample = document.createElement('p');
 		const lengthExample = document.createElement('p');
 		const assetOperationDiv = document.createElement('div');
 		const opReturnTitleDiv = document.createElement('div');
@@ -52,18 +52,29 @@ fuction showAssetCreationTxns (jsonObj) {
 		const payloadOutputExampleDiv = document.createElement('div');
 		const lengthExampleDiv = document.createElement('div');
 		
-		assetOperationDiv.textContent = 'Asset Operation';
-		opReturnTitleDiv.textContent = 'OP_RETURN for Token Creation Txn (Asset Type: ${asset[i]})';
-		fieldDiv.textContent = 'Field';
-		opReturnLabelDiv.textContent = 'OP_RETURN Payload';
-		bytesLabelDiv.textContent = 'Bytes';
-		maxBytesLabelDiv.textContent = 'Max Bytes';
-		bytesExampleDiv.textContent = '145';
-		maxBytesExampleDiv.textContent = '153';
-		payloadOutputLabelDiv.textContent = 'Payload Output:';
-		lengthLabelDiv.textContent = 'Length:';
-		payloadOutputExampleDiv.textContent = //TODO: Concatenate;
-		lengthExampleDiv.textContent = '145';
+		assetOperation.textContent = 'Asset Operation';
+		opReturnTitle.textContent = 'OP_RETURN for Token Creation Txn (Asset Type: ${asset[i]})';
+		field.textContent = 'Field';
+		opReturnLabel.textContent = 'OP_RETURN Payload';
+		bytesLabel.textContent = 'Bytes';
+		maxBytesLabel.textContent = 'Max Bytes';
+		bytesExample.textContent = '145';
+		maxBytesExample.textContent = '153';
+		payloadOutputLabel.textContent = 'Payload Output:';
+		lengthLabel.textContent = 'Length:';
+		lengthExample.textContent = '145';
+		
+		assetOperationDiv.appendChild('assetOperation');
+		opReturnTitleDiv.appendChild('opReturnTitle');
+		fieldDiv.appendChild('field');
+		opReturnLabelDiv.appendChild('opReturnLabel');
+		bytesLabelDiv.appendChild('bytesLabel');
+		maxBytesLabelDiv.appendChild('maxBytesLabel');
+		bytesExampleDiv.appendChild('bytesExample');
+		maxBytesExampleDiv.appendChild('maxBytesExample');
+		payloadOutputLabelDiv.appendChild('payloadOutputLabel');
+		lengthLabelDiv.appendChild('lengthLabel');
+		lengthExampleDiv.appendChild('lengthExample');
 		
 		assetOperationDiv.className = 'asset-operation-div';
 		opReturnTitleDiv.className = 'op-return-title-div';
@@ -107,6 +118,13 @@ fuction showAssetCreationTxns (jsonObj) {
 		commentsHeader.textContent = 'Comments';
 		dataTypeHeader.textContent = 'Data Type';
 
+		subfieldHeaderDiv.appendChild(subfieldHeader);
+		maxBytesHeaderDiv.appendChild(maxBytesHeader);
+		hexValueHeaderDiv.appendChild(hexValueHeader);
+		asciiHeaderDiv.appendChild(asciiHeader);
+		commentsHeaderDiv.appendChild(commentsHeader);
+		dataTypeHeaderDiv.appendChild(dataTypeHeader);
+		
 		opReturn.appendChild(subfieldHeaderDiv);
 		opReturn.appendChild(maxBytesHeaderDiv);
 		opReturn.appendChild(hexValueHeaderDiv);
@@ -115,6 +133,8 @@ fuction showAssetCreationTxns (jsonObj) {
 		opReturn.appendChild(dataTypeHeaderDiv);
 		
 		opReturn.appendChild(assetCreationHeader);
+		
+		const fullPayloadOutput = 0;
 
 		for (let j = 0; j < assets[i].fields.length) {
 			const subfield = document.createElement('p');
@@ -136,7 +156,9 @@ fuction showAssetCreationTxns (jsonObj) {
 			ascii.textContent = assets[i].fields[j].example;
 			comments.textContent = assets[i].fields[j].comments;
 			dataType.textContent = assets[i].fields[j].dataType;
-
+			
+			fullPayloadOutput += hexValue.textContent;
+			
 			subfieldDiv.appendChild(subfield);
 			maxBytesDiv.appendChild(maxBytes);
 			hexValueDiv.appendChild(hexValue);
@@ -151,6 +173,10 @@ fuction showAssetCreationTxns (jsonObj) {
 			opReturn.appendChild(commentsDiv);
 			opReturn.appendChild(dataTypeDiv);
 		}
+		
+		payloadOutputExample.textContent = fullPayloadOutput;
+		payloadOutputExampleDiv.appendChild('payloadOutputExample');
+		
 		assetCreationTable.appendChild(assetOperationDiv);
 		assetCreationTable.appendChild(opReturnTitleDiv);
 		assetCreationTable.appendChild(fieldDiv);
@@ -162,7 +188,8 @@ fuction showAssetCreationTxns (jsonObj) {
 		assetCreationTable.appendChild(maxBytesExampleDiv);
 		assetCreationTable.appendChild(payloadOutputLabelDiv);
 		assetCreationTable.appendChild(lengthLabelDiv);
-		assetCreationTable.appendChild(payloudOutputExampleDiv);
+		assetCreationTable.appendChild(payloadOutputExampleDiv);
 		assetCreationTable.appendChild(lengthExampleDiv);
 	}
+	
 }
