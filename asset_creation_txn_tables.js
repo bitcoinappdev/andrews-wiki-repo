@@ -153,7 +153,7 @@ fuction showAssetCreationTxns (jsonObj) {
 			const commentsDiv = document.createElement('div');
 			const dataTypeDiv = document.createElement('div');
 
-			subfield.textContent = assets[i].fields[j].name;
+			subfield.textContent = assets[i].fields[j].label;
 			maxBytes.textContent = assets[i].fields[j].size;
 			hexValue.textContent =  ascii_to_hex(assets[i].fields[j].example);
 			ascii.textContent = assets[i].fields[j].example;
